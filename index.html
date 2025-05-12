@@ -3,34 +3,127 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="WDD 231 - Web Frontend Development I" />
-    <title>WDD 231 - Home</title>
-    <link rel="stylesheet" href="styles.css" />
+    <meta
+      name="description"
+      content="WDD 231 Course Home Page - Web Frontend Development I"
+    />
+    <meta name="author" content="Juan Valencia" />
+    <title>WDD 231 - Web Frontend Development I</title>
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/small.css" />
+    <link rel="stylesheet" href="styles/large.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- JavaScript Files -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
   </head>
   <body>
     <header>
-      <h1>WDD 231 - Web Frontend Development I</h1>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="assignments.html">Assignments</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
+      <div class="header-content">
+        <img
+          src="images/profile.jpg"
+          alt="Juan Valencia's Profile Photo"
+          loading="lazy"
+        />
+        <span>Juan Valencia</span>
+      </div>
     </header>
+
+    <nav>
+      <button
+        id="hamburger-btn"
+        aria-label="Toggle Navigation Menu"
+        aria-expanded="false"
+      >
+        ☰
+      </button>
+      <ul id="primary-nav">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="chamber/index.html">Chamber</a></li>
+        <li><a href="final/index.html">Final</a></li>
+        <li>
+          <a
+            href="https://github.com/iamvalenciia"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/juan-valencia-714a68201/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LinkedIn
+          </a>
+        </li>
+      </ul>
+    </nav>
+
     <main>
-      <section>
-        <h2>Welcome to WDD 231</h2>
-        <p>
-          This is the homepage for the Web Frontend Development I course.
-          Explore the navigation links to learn more about the class and access
-          assignments.
-        </p>
+      <h1>Home</h1>
+
+      <div class="main-grid">
+        <section id="welcome">
+          <h2>Course Work</h2>
+          <ul class="course-highlights"></ul>
+        </section>
+
+        <section id="image-city">
+          <h2>Esmeraldas, Ecuador</h2>
+          <figure>
+            <img
+              src="images/esmeraldas.jpg"
+              alt="Beautiful beach view of Esmeraldas, Ecuador"
+              class="responsive"
+              loading="lazy"
+            />
+            <figcaption>Esmeraldas Beach - A tropical paradise</figcaption>
+          </figure>
+        </section>
+      </div>
+
+      <section id="certificate-info">
+        <h2>Web and Computer Programming Certificate</h2>
+        <div
+          class="filter-buttons"
+          role="group"
+          aria-label="Course filter options"
+        >
+          <button class="filter-btn active" data-filter="all">
+            All Courses
+          </button>
+          <button class="filter-btn" data-filter="WDD">WDD Courses</button>
+          <button class="filter-btn" data-filter="CSE">CSE Courses</button>
+        </div>
+
+        <div id="course-cards-container" class="course-grid"></div>
+
+        <div id="total-credits" class="credits-summary">
+          Total Credits: <span id="credit-count">0</span>
+        </div>
       </section>
     </main>
+
     <footer>
-      <p>&copy; 2023 WDD 231. All rights reserved.</p>
+      <p>
+        &copy; <span id="current-year"></span> | Juan Valencia |
+        Esmeraldas/Ecuador
+      </p>
+      <p id="lastModified"></p>
     </footer>
   </body>
 </html>

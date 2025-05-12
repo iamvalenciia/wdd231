@@ -1,0 +1,158 @@
+/* larger.css - Styles for larger screens */
+
+@media screen and (min-width: 600px) {
+  /* Course cards - 2 columns */
+  #course-cards-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    padding: 0;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  /* Header */
+  header {
+    padding: 1.5rem 2rem;
+  }
+
+  .header-content {
+    justify-content: flex-start;
+  }
+
+  header img {
+    width: 70px;
+    height: 70px;
+  }
+
+  header span {
+    font-size: 2rem;
+  }
+
+  /* Navigation */
+  nav {
+    padding: 0 2rem;
+    position: sticky;
+  }
+
+  #hamburger-btn {
+    display: none;
+  }
+
+  #primary-nav {
+    display: flex;
+    justify-content: flex-start;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  #primary-nav li {
+    width: auto;
+    border: none;
+  }
+
+  #primary-nav a {
+    padding: 1rem 1.5rem;
+    border: none;
+    position: relative;
+    overflow: hidden;
+  }
+
+  #primary-nav a::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: var(--accent-color);
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+  }
+
+  #primary-nav a:hover {
+    transform: none;
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  #primary-nav a:hover::before {
+    transform: translateX(0);
+  }
+
+  #primary-nav a.active {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  #primary-nav a.active::before {
+    transform: translateX(0);
+  }
+
+  /* Main content */
+  main {
+    padding: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  /* Two-column layout for sections */
+  .main-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  #certificate-info {
+    grid-column: 1 / -1;
+  }
+
+  /* Filter buttons */
+  .filter-buttons {
+    justify-content: flex-start;
+  }
+
+  /* Course cards - 3 columns */
+  #course-cards-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main {
+    padding: 3rem;
+  }
+
+  /* Course cards - 4 columns */
+  #course-cards-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  /* Enhance hover effects */
+  .course-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+
+  .filter-btn:hover {
+    transform: translateY(-3px);
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  body {
+    background-color: #f0f2f5;
+  }
+
+  main {
+    padding: 2rem 2rem;
+  }
+}
