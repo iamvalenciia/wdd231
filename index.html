@@ -29,7 +29,8 @@
           src="images/profile.jpg"
           alt="Juan Valencia's Profile Photo"
           loading="lazy"
-        />
+          width="60"
+          height="60">
         <span>Juan Valencia</span>
       </div>
     </header>
@@ -38,8 +39,7 @@
       <button
         id="hamburger-btn"
         aria-label="Toggle Navigation Menu"
-        aria-expanded="false"
-      >
+        aria-expanded="false">
         ☰
       </button>
       <ul id="primary-nav">
@@ -50,8 +50,7 @@
           <a
             href="https://github.com/iamvalenciia"
             target="_blank"
-            rel="noopener noreferrer"
-          >
+            rel="noopener noreferrer">
             GitHub
           </a>
         </li>
@@ -59,8 +58,7 @@
           <a
             href="https://www.linkedin.com/in/juan-valencia-714a68201/"
             target="_blank"
-            rel="noopener noreferrer"
-          >
+            rel="noopener noreferrer">
             LinkedIn
           </a>
         </li>
@@ -71,22 +69,36 @@
       <h1>Home</h1>
 
       <div class="main-grid">
-        <section id="welcome">
-          <h2>Course Work</h2>
-          <ul class="course-highlights"></ul>
-        </section>
-
         <section id="image-city">
           <h2>Esmeraldas, Ecuador</h2>
           <figure>
-            <img
-              src="images/esmeraldas.jpg"
-              alt="Beautiful beach view of Esmeraldas, Ecuador"
-              class="responsive"
-              loading="lazy"
-            />
+            <picture>
+              <source
+                srcset="images/esmeraldas.webp"
+                type="image/webp">
+              <source
+                srcset="images/esmeraldas-1200.jpg 1200w,
+                        images/esmeraldas-800.jpg 800w,
+                        images/esmeraldas-400.jpg 400w"
+                sizes="(max-width: 400px) 400px,
+                       (max-width: 800px) 800px,
+                       1200px"
+                type="image/jpeg">
+              <img
+                src="images/esmeraldas.webp"
+                alt="Beautiful beach view of Esmeraldas, Ecuador"
+                class="responsive"
+                width="800"
+                height="533"
+                fetchpriority="high">
+            </picture>
             <figcaption>Esmeraldas Beach - A tropical paradise</figcaption>
           </figure>
+        </section>
+
+        <section id="welcome">
+          <h2>Course Work</h2>
+          <ul class="course-highlights"></ul>
         </section>
       </div>
 
