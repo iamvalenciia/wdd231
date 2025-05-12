@@ -1,0 +1,94 @@
+/* Critical CSS - Only essential above-the-fold styles */
+:root {
+  --primary-color: #1a4c7c;
+  --secondary-color: #2c3e50;
+  --accent-color: #e74c3c;
+  --light-color: #f5f7fa;
+  --dark-color: #2c3e50;
+  --font-heading: "Roboto", sans-serif;
+  --font-body: "Open Sans", sans-serif;
+  --shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  --transition: all 0.3s ease;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-body);
+  line-height: 1.6;
+  color: var(--dark-color);
+  background-color: var(--light-color);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+header {
+  background-color: white;
+  box-shadow: var(--shadow);
+  padding: 1.5rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+header img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--primary-color);
+}
+
+header span {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+/* Navigation */
+nav {
+  background-color: var(--secondary-color);
+  box-shadow: var(--shadow);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+#primary-nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#primary-nav a {
+  color: white;
+  text-decoration: none;
+  padding: 1rem 1.5rem;
+  display: block;
+}
+
+/* Main content initial styles */
+main {
+  flex: 1;
+  padding: 1rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.main-grid {
+  margin-bottom: 2rem;
+} 

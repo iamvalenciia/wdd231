@@ -1,21 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="WDD 231 Course Home Page - Web Frontend Development I">
-    <meta name="author" content="Juan Valencia">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="WDD 231 Course Home Page - Web Frontend Development I"
+    />
+    <meta name="author" content="Juan Valencia" />
     <title>WDD 231 - Web Frontend Development I</title>
 
-    <!-- CSS Files -->
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/small.css">
-    <link rel="stylesheet" href="styles/large.css">
+    <!-- Preload critical resources -->
+    <link rel="preload" href="styles/critical.css" as="style" />
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap"
+      as="style"
+    />
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Critical CSS -->
+    <style>
+      /* This will be replaced with the contents of critical.css */
+      @import url("styles/critical.css");
+    </style>
+
+    <!-- Preconnect to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Async CSS loading -->
+    <link
+      rel="stylesheet"
+      href="styles/normalize.css"
+      media="print"
+      onload="this.media='all'"
+    />
+    <link
+      rel="stylesheet"
+      href="styles/small.css"
+      media="print"
+      onload="this.media='all'"
+    />
+    <link
+      rel="stylesheet"
+      href="styles/large.css"
+      media="print"
+      onload="this.media='all'"
+    />
+
+    <!-- Optimized Google Fonts loading -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap"
+      media="print"
+      onload="this.media='all'"
+      rel="stylesheet"
+    />
+
+    <!-- Fallback for no JavaScript -->
+    <noscript>
+      <link rel="stylesheet" href="styles/normalize.css" />
+      <link rel="stylesheet" href="styles/small.css" />
+      <link rel="stylesheet" href="styles/large.css" />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet"
+      />
+    </noscript>
 
     <!-- JavaScript Files -->
     <script src="scripts/navigation.js" defer></script>
@@ -26,7 +76,7 @@
     <header>
       <div class="header-content">
         <img
-          src="images/profile.jpg"
+          src="images/profile.webp"
           alt="Juan Valencia's Profile Photo"
           loading="lazy"
         />
@@ -83,7 +133,8 @@
               src="images/esmeraldas.webp"
               alt="Beautiful beach view of Esmeraldas, Ecuador"
               class="responsive"
-              loading="lazy"
+              width="600"
+              height="400"
             />
             <figcaption>Esmeraldas Beach - A tropical paradise</figcaption>
           </figure>
