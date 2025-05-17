@@ -1,0 +1,75 @@
+/* Large screen styles */
+
+/* Header */
+.header-content {
+    flex-direction: row;
+    text-align: left;
+}
+
+.logo {
+    flex-direction: row;
+}
+
+.header-text h1 {
+    font-size: 1.8rem;
+}
+
+.header-text h2 {
+    font-size: 1.2rem;
+}
+
+/* Navigation */
+#hamburger-btn {
+    display: none;
+}
+
+#primary-nav {
+    display: flex;
+    justify-content: center;
+    position: static;
+    background: none;
+}
+
+#primary-nav a {
+    padding: 1rem 2rem;
+}
+
+/* Main Content */
+main {
+    padding: 2rem;
+}
+
+/* Directory Styles */
+.view-options {
+    justify-content: flex-end;
+}
+
+/* Grid View */
+.grid-view {
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+/* List View */
+.member-list-item {
+    flex-direction: row;
+    text-align: left;
+    padding: 1.5rem;
+}
+
+.member-info {
+    text-align: left;
+}
+
+/* Footer */
+.footer-content {
+    grid-template-columns: repeat(3, 1fr);
+    text-align: left;
+}
+
+.footer-info {
+    flex-direction: row;
+}
+
+.contact-info {
+    align-items: flex-start;
+} 

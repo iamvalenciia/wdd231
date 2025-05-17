@@ -1,0 +1,67 @@
+{
+  "companies": [
+    {
+      "name": "Palmar de Los Esteros EMA S.A. (Palesema)",
+      "address": "San Lorenzo, Esmeraldas",
+      "phonenumber": "+593 6 271 2345",
+      "websiteLink": "https://www.palesema.com.ec/",
+      "websiteName": "palesema.com.ec",
+      "level": "Platinum",
+      "image": "https://www.palesema.com.ec/images/logo.png"
+    },
+    {
+      "name": "Contrachapados de Esmeraldas S.A. (CODESA)",
+      "address": "Esmeraldas, Esmeraldas",
+      "phonenumber": "+593 6 272 3456",
+      "websiteLink": "https://www.codesa.com.ec/",
+      "websiteName": "codesa.com.ec",
+      "level": "Platinum",
+      "image": "https://www.codesa.com.ec/images/logo.png"
+    },
+    {
+      "name": "Cajuso Creative",
+      "address": "Playa Las Palmas, Esmeraldas",
+      "phonenumber": "+593 99 123 4567",
+      "websiteLink": "https://www.cajusocreative.com/",
+      "websiteName": "cajusocreative.com",
+      "level": "Platinum",
+      "image": "https://www.cajusocreative.com/images/logo.png"
+    },
+    {
+      "name": "Gran Akí Esmeraldas",
+      "address": "Esmeraldas, Esmeraldas",
+      "phonenumber": "+593 6 273 4567",
+      "websiteLink": "https://www.granaki.com.ec/",
+      "websiteName": "granaki.com.ec",
+      "level": "Platinum",
+      "image": "https://www.granaki.com.ec/images/logo.png"
+    },
+    {
+      "name": "Petroecuador - Refinería Esmeraldas",
+      "address": "Esmeraldas, Esmeraldas",
+      "phonenumber": "+593 6 274 5678",
+      "websiteLink": "https://www.petroecuador.gob.ec/",
+      "websiteName": "petroecuador.gob.ec",
+      "level": "Platinum",
+      "image": "https://www.petroecuador.gob.ec/images/logo.png"
+    },
+    {
+      "name": "Comercializadora y Procesadora de Productos del Mar y Sus Derivados Majen S.A.S.",
+      "address": "Esmeraldas, Esmeraldas",
+      "phonenumber": "+593 6 275 6789",
+      "websiteLink": "https://www.majen.com.ec/",
+      "websiteName": "majen.com.ec",
+      "level": "Platinum",
+      "image": "https://www.majen.com.ec/images/logo.png"
+    },
+    {
+      "name": "Susan Shopping Cía. Ltda.",
+      "address": "Esmeraldas, Esmeraldas",
+      "phonenumber": "+593 6 276 7890",
+      "websiteLink": "https://www.susanshopping.com.ec/",
+      "websiteName": "susanshopping.com.ec",
+      "level": "Platinum",
+      "image": "https://www.susanshopping.com.ec/images/logo.png"
+    }
+  ]
+}
