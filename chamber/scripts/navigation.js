@@ -4,7 +4,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const primaryNav = document.getElementById('primary-nav');
 
     // Toggle mobile menu
-    hamburgerBtn.addEventListener('click', () => {
+    hamburgerBtn.addEventListener('click', (e) => {
+        e.stopPropagation(); // Prevent event from bubbling up
         primaryNav.classList.toggle('open');
         const isExpanded = primaryNav.classList.contains('open');
         hamburgerBtn.setAttribute('aria-expanded', isExpanded);
@@ -15,6 +16,14 @@ document.addEventListener('DOMContentLoaded', () => {
         const isClickInside = primaryNav.contains(event.target) || hamburgerBtn.contains(event.target);
         
         if (!isClickInside && primaryNav.classList.contains('open')) {
+            primaryNav.classList.remove('open');
+            hamburgerBtn.setAttribute('aria-expanded', 'false');
+        }
+    });
+
+    // Handle window resize
+    window.addEventListener('resize', () => {
+        if (window.innerWidth >= 768) {
             primaryNav.classList.remove('open');
             hamburgerBtn.setAttribute('aria-expanded', 'false');
         }

@@ -7,7 +7,7 @@
       "websiteLink": "https://www.palesema.com.ec/",
       "websiteName": "palesema.com.ec",
       "level": "Platinum",
-      "image": "https://www.palesema.com.ec/images/logo.png"
+      "image": "./images/palmar.jpg"
     },
     {
       "name": "Contrachapados de Esmeraldas S.A. (CODESA)",
@@ -16,7 +16,7 @@
       "websiteLink": "https://www.codesa.com.ec/",
       "websiteName": "codesa.com.ec",
       "level": "Platinum",
-      "image": "https://www.codesa.com.ec/images/logo.png"
+      "image": "./images/chapados.png"
     },
     {
       "name": "Cajuso Creative",
@@ -25,7 +25,7 @@
       "websiteLink": "https://www.cajusocreative.com/",
       "websiteName": "cajusocreative.com",
       "level": "Platinum",
-      "image": "https://www.cajusocreative.com/images/logo.png"
+      "image": "./images/creative.png"
     },
     {
       "name": "Gran Akí Esmeraldas",
@@ -34,7 +34,7 @@
       "websiteLink": "https://www.granaki.com.ec/",
       "websiteName": "granaki.com.ec",
       "level": "Platinum",
-      "image": "https://www.granaki.com.ec/images/logo.png"
+      "image": "./images/aki.png"
     },
     {
       "name": "Petroecuador - Refinería Esmeraldas",
@@ -43,7 +43,7 @@
       "websiteLink": "https://www.petroecuador.gob.ec/",
       "websiteName": "petroecuador.gob.ec",
       "level": "Platinum",
-      "image": "https://www.petroecuador.gob.ec/images/logo.png"
+      "image": "./images/petroecuador.png"
     },
     {
       "name": "Comercializadora y Procesadora de Productos del Mar y Sus Derivados Majen S.A.S.",
@@ -52,7 +52,7 @@
       "websiteLink": "https://www.majen.com.ec/",
       "websiteName": "majen.com.ec",
       "level": "Platinum",
-      "image": "https://www.majen.com.ec/images/logo.png"
+      "image": "./images/camarones.png"
     },
     {
       "name": "Susan Shopping Cía. Ltda.",
@@ -61,7 +61,7 @@
       "websiteLink": "https://www.susanshopping.com.ec/",
       "websiteName": "susanshopping.com.ec",
       "level": "Platinum",
-      "image": "https://www.susanshopping.com.ec/images/logo.png"
+      "image": "./images/susan.png"
     }
   ]
 }

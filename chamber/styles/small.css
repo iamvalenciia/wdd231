@@ -21,12 +21,32 @@
 
 /* Navigation */
 #primary-nav {
-    position: absolute;
+    display: none;
     top: 100%;
     left: 0;
     right: 0;
     background-color: var(--secondary-color);
     z-index: 1000;
+    padding: 1rem 0;
+}
+
+#primary-nav.open {
+    display: block;
+}
+
+#primary-nav li {
+    list-style: none;
+}
+
+#primary-nav a {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: white;
+    text-decoration: none;
+}
+
+#primary-nav a:hover {
+    background-color: var(--primary-color);
 }
 
 /* Main Content */
