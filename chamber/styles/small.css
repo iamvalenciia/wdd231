@@ -329,7 +329,7 @@ footer {
 }
 
 .social-icon {
-    fill: currentColor;
+    fill: var(--primary-color);
     width: 32px;
     height: 32px;
 }
