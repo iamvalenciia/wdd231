@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EsmeraldasChamber of Commerce | Juan Valencia</title>
+    <meta name="description" content="A simple HTML document with a title and description.">
+    <meta name="author" content="Juan Valencia Soto">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/logo.png" />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:title" content="Esmeraldas Chamber of Commerce Directory" />
+    <meta property="og:description" content="Discover local businesses and connect with the Esmeraldas community" />
+    <meta property="og:image" content="https://iamvalenciia.github.io/wdd231/chamber/images/esmeraldas-chamber.jpg" />
+    <meta property="og:url" content="https://iamvalenciia.github.io/wdd231/chamber/directory.html" />
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/small.css" />
+    <link rel="stylesheet" href="styles/large.css" media="(min-width: 768px)" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--Scripts-->
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/ramdonMembers.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/dates.js" defer></script>
+    
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <div class="logo">
+        <img src="images/logo.png" alt="Esmeraldas Chamber of Commerce Logo" width="100" height="100" />
+        <div class="header-text">
+          <h1>Esmeraldas</h1>
+          <h2>Chamber of Commerce</h2>
+        </div>
+      </div>
+    </div>
+    <nav>
+      <button id="hamburger-btn" aria-label="Toggle Navigation Menu" aria-expanded="false">☰</button>
+      <ul id="primary-nav">
+        <li><a href="index.html" class="active" >Home</a></li>
+        <li><a href="discover.html">Discover</a></li>
+        <li><a href="./chamber.html" >Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="date-banner">
+      <span id="current-date"></span>
+    </div>
+  </header>
+  <main>
+      <!--Scalable, responsive hero image-->
+      <div class="hero">
+          <picture class="hero-image">
+              <source media="(min-width: 38rem)" srcset="images/home/home-image.jpg">
+              <img src="images/home/home-image.jpg" alt="Esmeraldas Centro">
+          </picture>
+          <button id="joinBtn">Join Us</button>
+      </div>
+      <h1>Home | Esmeraldas Chamber of Commerce</h1>
+      <div class="info-container">
+          <section class="info-cards"><h3>Events</h3></section>
+          <section class="info-cards weather-card">
+              <h3>Current Weather</h3>
+              <img class="weather-img" src="" alt="weather icon">
+              <div class="weather-info">
+                  <h4 id="location">Location: Esmeraldas, Ecuador</h4>
+                  <p><span id="current-temperature"></span></p>
+                  <p>Description: <span id="weather-description"></span></p>
+                  <p>High: <span id="high"></span>°</p>
+                  <p>Low: <span id="low"></span>°</p>
+                  <p>Humidity: <span id="humidity"></span></p>
+              </div>
+          </section>
+          <section class="info-cards">
+              <h3>Weather Forecast</h3>
+              
+              <p>Today: <span id="today"></span>°</p>
+              <p>In one Day: <span id="oneDay"></span>°</p>
+              <p>In Two Days: <span id="twoDays"></span>°</p>
+          </section>
+      </div>
+      <!-- Company Spotlights Section -->
+      <h2>Silver and Gold Members</h2>
+      <section class="spotlights-container">
+              </div>
+          </div>
+      </section>
+      </div>
+  </main>
+  <footer>
+      <div class="footer-content">
+          <div class="footer-section contact-info">
+              <h3>Contact Information</h3>
+              <ul>
+                  <li><span class="footer-title">Esmeraldas Chamber of Commerce</span></li>
+                  <li><i class="icon-phone"></i>Oficina: +56 67 2123 456</li>
+                  <li><i class="icon-mobile"></i>Móvil/WhatsApp: +56 9 8765 4321</li>
+                  <li><i class="icon-email"></i>contacto@camaracoyhaique.cl</li>
+              </ul>
+          </div>
+          
+          <div class="footer-section social-links">
+              <h3>Follow Us</h3>
+              <div class="social">
+                  <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                      <svg class="social-icon" width="32" height="32">
+                          <use href="images/social-icons.svg#facebook-icon"></use>
+                      </svg>
+                  </a>
+                  <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                      <svg class="social-icon" width="32" height="32">
+                          <use href="images/social-icons.svg#linkedin-icon"></use>
+                      </svg>
+                  </a>
+                  <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                      <svg class="social-icon" width="32" height="32">
+                          <use href="images/social-icons.svg#instagram-icon"></use>
+                      </svg>
+                  </a>
+              </div>
+          </div>
+
+          <div class="footer-section location">
+              <h3>Location</h3>
+              <p>Esmeraldas, Ecuador</p>
+              <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" class="map-link">
+                  View on Google Maps
+              </a>
+          </div>
+      </div>
+
+      <div class="footer-bottom">
+          <p>&copy; <span id="CurrentYear"></span> Esmeraldas Chamber of Commerce</p>
+          <p>Juan Valencia Soto</p>
+          <p>Last Modified: <span id="lastModification"></span></p>
+      </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,144 @@
+@media only screen and (min-width: 300px){
+    
+    footer{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    footer li{
+        font-size: 15px;
+    }
+
+    .members-container{
+        margin: 0 auto;
+        max-width: 1200px; /* Ajusta el valor según tu diseño */
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        justify-content: center;
+        align-items: start; /* O center si quieres centrar verticalmente también */
+    }
+}
+
+@media only screen and (min-width: 800px){
+
+    .info-container{
+        display: grid;
+        grid-template-columns: 30rem 1fr;
+        grid-template-rows: 20rem;
+        gap: 20px;
+    }
+    
+    .bussiness-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+    }
+
+    
+
+    .members-container{
+        margin: 0 auto;
+        max-width: 1200px; /* Ajusta el valor según tu diseño */
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        justify-content: center;
+        align-items: start; /* O center si quieres centrar verticalmente también */
+    }
+
+    .spotlights-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+}
+
+@media only screen and (min-width: 950px){
+    #myButton{
+        display: none;
+    }
+
+    ul.menuLinks, ul.menuLinks.open{
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    ul.menuLinks li:hover {
+        background-color: var(--color1);
+        color: white;
+    }
+
+        nav {
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        background: var(--color1);
+        box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+        border-radius: 0 0 18px 18px;
+        padding: 0.5rem 2rem;
+        z-index: 100;
+        display: flex;
+        align-items: center;
+        min-height: 60px;
+    }
+    
+    ul.menuLinks, ul.menuLinks.open {
+        display: flex;
+        gap: 2rem;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    
+    ul.menuLinks li a {
+        color: #fff;
+        font-size: 1.1rem;
+        font-family: 'Segoe UI', Arial, sans-serif;
+        text-decoration: none;
+        padding: 0.7rem 1.2rem;
+        border-radius: 8px;
+        transition: background 0.2s, color 0.2s;
+        letter-spacing: 1px;
+        display: block;
+    }
+    
+    ul.menuLinks li a:hover,
+    ul.menuLinks li a:focus {
+        background: var(--color2);
+        color: var(--color1);
+        outline: none;
+    }
+    
+    footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+    }
+
+    footer li{
+        font-size: 15px;
+    }
+
+    .info-container{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+
+    .members-container{
+        margin: 0 auto;
+        max-width: 1200px; /* Ajusta el valor según tu diseño */
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+        justify-content: center;
+        align-items: start; /* O center si quieres centrar verticalmente también */
+    }
+
+    .spotlights-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+    }
+}
