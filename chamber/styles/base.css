@@ -406,7 +406,7 @@ legend {
 }
 
 .info-btn {
-    background-color: #3498db;
+    background-color: var(--primary-color);
     color: white;
     padding: 0.75rem 1.5rem;
     border: none;
@@ -417,7 +417,7 @@ legend {
 }
 
 .info-btn:hover {
-    background-color: #2980b9;
+    background-color: var(--hover-color);
 }
 
 /* Modal Styles */
