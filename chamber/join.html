@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join - Esmeraldas Chamber of Commerce</title>
+    <meta name="description" content="Join the Esmeraldas Chamber of Commerce and become part of our business community.">
+    <meta name="author" content="Juan Valencia Soto">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/logo.png" />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/small.css" />
+    <link rel="stylesheet" href="styles/large.css" media="(min-width: 768px)" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+
+    <!--Scripts-->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/dates.js" defer></script>
+    <script src="scripts/join.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <img src="images/logo.png" alt="Esmeraldas Chamber of Commerce Logo" width="100" height="100" />
+            </div>
+            <div class="social">
+                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                    <svg class="social-icon" width="32" height="32">
+                        <use href="images/social-icons.svg#fb"></use>
+                    </svg>
+                </a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <svg class="social-icon" width="32" height="32">
+                        <use href="images/social-icons.svg#in"></use>
+                    </svg>
+                </a>
+                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                    <svg class="social-icon" width="32" height="32">
+                        <use href="images/social-icons.svg#ig"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <nav>
+            <button id="hamburger-btn" aria-label="Toggle Navigation Menu" aria-expanded="false">☰</button>
+            <ul id="primary-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="./chamber.html">Directory</a></li>
+                <li><a href="join.html" class="active">Join</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="date-banner">
+            <span id="current-date"></span>
+        </div>
+    </header>
+
+    <main class="join-page">
+        <h1>Join the Chamber</h1>
+        
+        <div class="join-container">
+            <form method="get" action="thankyou.html" class="join-form">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <div class="form-group">
+                        <label for="firstName">First Name*</label>
+                        <input type="text" id="firstName" name="firstName" required autocomplete="given-name" title="Enter your first name">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="lastName">Last Name*</label>
+                        <input type="text" id="lastName" name="lastName" required autocomplete="family-name" title="Enter your last name">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="title">Business Title</label>
+                        <input type="text" id="title" name="title" autocomplete="organization-title" pattern="[A-Za-z\s-]{7,}" title="Enter your business title (minimum 7 characters, letters, spaces, and hyphens only)">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email*</label>
+                        <input type="email" id="email" name="email" required autocomplete="email" placeholder="example@email.com" title="Enter your email address">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone Number*</label>
+                        <input type="tel" id="phone" name="phone" required autocomplete="tel" title="Enter your phone number">
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Business Information</legend>
+                    <div class="form-group">
+                        <label for="businessName">Business/Organization Name*</label>
+                        <input type="text" id="businessName" name="businessName" required autocomplete="organization" title="Enter your business or organization name">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="membershipLevel">Membership Level*</label>
+                        <select id="membershipLevel" name="membershipLevel" required title="Select your membership level">
+                            <option value="">Select a membership level</option>
+                            <option value="np">NP Membership (Non-Profit)</option>
+                            <option value="bronze">Bronze Membership</option>
+                            <option value="silver">Silver Membership</option>
+                            <option value="gold">Gold Membership</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="description">Business Description</label>
+                        <textarea id="description" name="description" rows="4" title="Describe your business or organization"></textarea>
+                    </div>
+                </fieldset>
+
+                <input type="hidden" id="timestamp" name="timestamp">
+                <button type="submit" class="submit-btn">Submit Application</button>
+            </form>
+
+            <div class="membership-cards">
+                <div class="card np-card">
+                    <h3>NP Membership</h3>
+                    <p>For non-profit organizations</p>
+                    <p>No fee</p>
+                    <button class="info-btn" data-modal="np-modal">Learn More</button>
+                </div>
+
+                <div class="card bronze-card">
+                    <h3>Bronze Membership</h3>
+                    <p>Basic benefits package</p>
+                    <p>$500/year</p>
+                    <button class="info-btn" data-modal="bronze-modal">Learn More</button>
+                </div>
+
+                <div class="card silver-card">
+                    <h3>Silver Membership</h3>
+                    <p>Enhanced benefits package</p>
+                    <p>$1000/year</p>
+                    <button class="info-btn" data-modal="silver-modal">Learn More</button>
+                </div>
+
+                <div class="card gold-card">
+                    <h3>Gold Membership</h3>
+                    <p>Premium benefits package</p>
+                    <p>$2000/year</p>
+                    <button class="info-btn" data-modal="gold-modal">Learn More</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Membership Level Modals -->
+        <div id="np-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>NP Membership Benefits</h2>
+                <ul>
+                    <li>Free listing in business directory</li>
+                    <li>Access to member events</li>
+                    <li>Monthly newsletter</li>
+                    <li>Networking opportunities</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="bronze-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Bronze Membership Benefits</h2>
+                <ul>
+                    <li>All NP benefits</li>
+                    <li>Business listing with logo</li>
+                    <li>Quarterly training sessions</li>
+                    <li>Social media promotion</li>
+                    <li>10% discount on chamber events</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="silver-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Silver Membership Benefits</h2>
+                <ul>
+                    <li>All Bronze benefits</li>
+                    <li>Featured business listing</li>
+                    <li>Monthly training sessions</li>
+                    <li>Priority event registration</li>
+                    <li>25% discount on chamber events</li>
+                    <li>Quarterly spotlight on homepage</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="gold-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Gold Membership Benefits</h2>
+                <ul>
+                    <li>All Silver benefits</li>
+                    <li>Premium business listing</li>
+                    <li>Weekly training sessions</li>
+                    <li>VIP event access</li>
+                    <li>50% discount on chamber events</li>
+                    <li>Monthly spotlight on homepage</li>
+                    <li>Dedicated business consultant</li>
+                    <li>Priority advertising placement</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section contact-info">
+                <h3>Contact Information</h3>
+                <ul>
+                    <li><span class="footer-title">Esmeraldas Chamber of Commerce</span></li>
+                    <li><i class="icon-phone"></i>Oficina: +56 67 2123 456</li>
+                    <li><i class="icon-mobile"></i>Móvil/WhatsApp: +56 9 8765 4321</li>
+                    <li><i class="icon-email"></i>contacto@camaracoyhaique.cl</li>
+                </ul>
+            </div>
+            
+            <div class="footer-section social-links">
+                <h3>Follow Us</h3>
+                <div class="social">
+                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                        <svg class="social-icon" width="32" height="32">
+                            <use href="images/social-icons.svg#fb"></use>
+                        </svg>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <svg class="social-icon" width="32" height="32">
+                            <use href="images/social-icons.svg#in"></use>
+                        </svg>
+                    </a>
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                        <svg class="social-icon" width="32" height="32">
+                            <use href="images/social-icons.svg#ig"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-section location">
+                <h3>Location</h3>
+                <p>Esmeraldas, Ecuador</p>
+                <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" class="map-link">
+                    View on Google Maps
+                </a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; <span id="CurrentYear"></span> Esmeraldas Chamber of Commerce</p>
+            <p>Juan Valencia Soto</p>
+            <p>Last Modified: <span id="lastModification"></span></p>
+        </div>
+    </footer>
+</body>
+</html> 
