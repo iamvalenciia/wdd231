@@ -519,3 +519,33 @@ legend {
 .contact-btn:hover {
     background-color: #34495e;
 }
+
+/* Visitor Information Styles */
+.visitor-info {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.visitor-message {
+    text-align: center;
+}
+
+.visitor-message h2 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.visitor-message p {
+    color: #34495e;
+    margin: 0.5rem 0;
+    line-height: 1.6;
+}
+
+#visit-count {
+    font-weight: bold;
+    color: #e74c3c;
+}

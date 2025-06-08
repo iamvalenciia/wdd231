@@ -1,0 +1,60 @@
+{
+    "attractions": [
+        {
+            "id": "attraction1",
+            "title": "Playa de Atacames",
+            "address": "Atacames, Esmeraldas, Ecuador",
+            "description": "One of Ecuador's most popular beaches, known for its vibrant nightlife, water sports, and beautiful coastline. Perfect for surfing, swimming, and enjoying the tropical atmosphere.",
+            "image": "images/discover/atacames.webp"
+        },
+        {
+            "id": "attraction2",
+            "title": "Manglares de Majagual",
+            "address": "Majagual, Esmeraldas, Ecuador",
+            "description": "A stunning mangrove forest ecosystem where visitors can explore the waterways by boat, observe diverse wildlife, and learn about the importance of mangrove conservation.",
+            "image": "images/discover/majagual.webp"
+        },
+        {
+            "id": "attraction3",
+            "title": "Termas de Tachina",
+            "address": "Tachina, Esmeraldas, Ecuador",
+            "description": "Natural hot springs surrounded by lush vegetation. Visitors can enjoy the therapeutic waters while experiencing the peaceful atmosphere of the rainforest.",
+            "image": "images/discover/tachina.webp"
+        },
+        {
+            "id": "attraction4",
+            "title": "Playa de Tonsupa",
+            "address": "Tonsupa, Esmeraldas, Ecuador",
+            "description": "A family-friendly beach with calm waters, perfect for swimming and water activities. Known for its beautiful sunsets and local seafood restaurants.",
+            "image": "images/discover/tonsupa.webp"
+        },
+        {
+            "id": "attraction5",
+            "title": "Reserva Ecológica Mache-Chindul",
+            "address": "Muisne, Esmeraldas, Ecuador",
+            "description": "A protected area featuring diverse ecosystems, hiking trails, and opportunities to observe unique wildlife. A paradise for nature lovers and eco-tourists.",
+            "image": "images/discover/mache.webp"
+        },
+        {
+            "id": "attraction6",
+            "title": "Playa de Mompiche",
+            "address": "Mompiche, Esmeraldas, Ecuador",
+            "description": "A hidden gem known for its pristine beaches and excellent surfing conditions. The area offers a perfect blend of natural beauty and local culture.",
+            "image": "images/discover/mompiche.webp"
+        },
+        {
+            "id": "attraction7",
+            "title": "Cascada de San Rafael",
+            "address": "San Rafael, Esmeraldas, Ecuador",
+            "description": "A magnificent waterfall surrounded by lush vegetation. Visitors can enjoy hiking trails, swimming in natural pools, and the refreshing mist of the falls.",
+            "image": "images/discover/sanrafael.webp"
+        },
+        {
+            "id": "attraction8",
+            "title": "Isla de los Pájaros",
+            "address": "Estero de Plátano, Esmeraldas, Ecuador",
+            "description": "A small island sanctuary home to various bird species. Perfect for bird watching, photography, and experiencing the rich biodiversity of the region.",
+            "image": "images/discover/pajaros.webp"
+        }
+    ]
+} 

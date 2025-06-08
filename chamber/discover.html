@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Esmeraldas Chamber of Commerce Directory - Find local businesses and connect with the community"
+    />
+    <meta name="author" content="Juan Valencia" />
+    <title>Directory - Esmeraldas Chamber of Commerce</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/logo.png" />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:title" content="Esmeraldas Chamber of Commerce Directory" />
+    <meta property="og:description" content="Discover local businesses and connect with the Esmeraldas community" />
+    <meta property="og:image" content="https://iamvalenciia.github.io/wdd231/chamber/images/discover/esmeraldas-chamber.jpg" />
+    <meta property="og:url" content="https://iamvalenciia.github.io/wdd231/chamber/directory.html" />
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/small.css" />
+    <link rel="stylesheet" href="styles/large.css" media="(min-width: 768px)" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <div class="logo">
+          <img src="images/logo.png" alt="Esmeraldas Chamber of Commerce Logo" width="100" height="100" />
+        </div>
+        <div class="social">
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+              <svg class="social-icon" width="32" height="32">
+                  <use href="images/social-icons.svg#fb"></use>
+              </svg>
+          </a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <svg class="social-icon" width="32" height="32">
+                  <use href="images/social-icons.svg#in"></use>
+              </svg>
+          </a>
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <svg class="social-icon" width="32" height="32">
+                  <use href="images/social-icons.svg#ig"></use>
+              </svg>
+          </a>
+      </div>
+      </div>
+      <nav>
+        <button id="hamburger-btn" aria-label="Toggle Navigation Menu" aria-expanded="false">☰</button>
+        <ul id="primary-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="discover.html">Discover</a></li>
+          <li><a href="./chamber.html" class="active">Directory</a></li>
+          <li><a href="join.html">Join</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="date-banner">
+        <span id="current-date"></span>
+      </div>
+    </header>
+
+    <main>
+        <section class="visitor-info">
+            <!-- Content will be dynamically populated by visitor.js -->
+        </section>
+
+        <section class="discover-grid">
+            <article class="card" id="card1">
+                <h2>Playa Las Palmas</h2>
+                <figure>
+                    <img src="images/discover/palmas.webp" alt="Playa Las Palmas" loading="lazy" width="300" height="200">
+                </figure>
+                <address>Las Palmas, Esmeraldas, Ecuador</address>
+                <p>One of the most beautiful beaches in Esmeraldas, known for its golden sand and crystal-clear waters. Perfect for swimming, sunbathing, and enjoying the tropical climate.</p>
+                <button class="btn">Learn More</button>
+            </article>
+
+            <article class="card" id="card2">
+                <h2>Museo de Esmeraldas</h2>
+                <figure>
+                    <img src="images/discover/museo.webp" alt="Museo de Esmeraldas" loading="lazy" width="300" height="200">
+                </figure>
+                <address>Calle Bolívar y Sucre, Esmeraldas, Ecuador</address>
+                <p>A cultural gem showcasing the rich history and heritage of Esmeraldas, featuring archaeological artifacts, traditional art, and exhibits about the Afro-Ecuadorian culture.</p>
+                <button class="btn">Learn More</button>
+            </article>
+
+            <article class="card" id="card3">
+                <h2>Malecón de Esmeraldas</h2>
+                <figure>
+                    <img src="images/discover/malecon.webp" alt="Malecón de Esmeraldas" loading="lazy" width="300" height="200">
+                </figure>
+                <address>Avenida Malecón, Esmeraldas, Ecuador</address>
+                <p>A beautiful waterfront promenade offering stunning views of the Pacific Ocean, local restaurants, and a perfect spot to enjoy the sunset and ocean breeze.</p>
+                <button class="btn">Learn More</button>
+            </article>
+
+            <article class="card" id="card4">
+                <h2>Parque Central</h2>
+                <figure>
+                    <img src="images/discover/parquecentral.webp" alt="Parque Central" loading="lazy" width="300" height="200">
+                </figure>
+                <address>Centro de Esmeraldas, Ecuador</address>
+                <p>The heart of the city, featuring beautiful gardens, historical monuments, and a vibrant atmosphere. A great place to experience local life and culture.</p>
+                <button class="btn">Learn More</button>
+            </article>
+
+            <article class="card" id="card5">
+                <h2>Cayapas-Mataje Ecological Reserve</h2>
+                <figure>
+                    <img src="images/discover/cayapas.webp" alt="Cayapas-Mataje Ecological Reserve" loading="lazy" width="300" height="200">
+                </figure>
+                <address>Cantón San Lorenzo, Esmeraldas, Ecuador</address>
+                <p>A pristine natural reserve featuring mangroves, diverse wildlife, and unique ecosystems. Perfect for nature lovers and eco-tourism activities.</p>
+                <button class="btn">Learn More</button>
+            </article>
+
+            <article class="card" id="card6">
+                <h2>Playa de Same</h2>
+                <figure>
+                    <img src="images/discover/same.webp" alt="Playa de Same" loading="lazy" width="300" height="200">
+                </figure>
+                <address>Same, Esmeraldas, Ecuador</address>
+                <p>A peaceful beach known for its calm waters and beautiful surroundings. Ideal for families and those seeking a quieter beach experience.</p>
+                <button class="btn">Learn More</button>
+            </article>
+
+            <article class="card" id="card7">
+                <h2>Catedral de Esmeraldas</h2>
+                <figure>
+                    <img src="images/discover/catedral.webp" alt="Catedral de Esmeraldas" loading="lazy" width="300" height="200">
+                </figure>
+                <address>Calle Bolívar, Esmeraldas, Ecuador</address>
+                <p>A beautiful cathedral showcasing colonial architecture and religious art. A significant landmark in the city's historical center.</p>
+                <button class="btn">Learn More</button>
+            </article>
+
+            <article class="card" id="card8">
+                <h2>Mercado Central</h2>
+                <figure>
+                    <img src="./images/discover/mercado.webp" alt="Mercado Central" loading="lazy" width="300" height="200">
+                </figure>
+                <address>Centro de Esmeraldas, Ecuador</address>
+                <p>A vibrant market offering fresh local produce, seafood, traditional crafts, and authentic Ecuadorian cuisine. Experience the local culture and flavors.</p>
+                <button class="btn">Learn More</button>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+          <div class="footer-section contact-info">
+              <h3>Contact Information</h3>
+              <ul>
+                  <li><span class="footer-title">Esmeraldas Chamber of Commerce</span></li>
+                  <li><i class="icon-phone"></i>Oficina: +56 67 2123 456</li>
+                  <li><i class="icon-mobile"></i>Móvil/WhatsApp: +56 9 8765 4321</li>
+                  <li><i class="icon-email"></i>contacto@camaracoyhaique.cl</li>
+              </ul>
+          </div>
+          
+          <div class="footer-section social-links">
+              <h3>Follow Us</h3>
+              <div class="social">
+                  <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                      <svg class="social-icon" width="32" height="32">
+                          <use href="images/discover/social-icons.svg#facebook-icon"></use>
+                      </svg>
+                  </a>
+                  <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                      <svg class="social-icon" width="32" height="32">
+                          <use href="images/discover/social-icons.svg#linkedin-icon"></use>
+                      </svg>
+                  </a>
+                  <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                      <svg class="social-icon" width="32" height="32">
+                          <use href="images/discover/social-icons.svg#instagram-icon"></use>
+                      </svg>
+                  </a>
+              </div>
+          </div>
+
+          <div class="footer-section location">
+              <h3>Location</h3>
+              <p>Esmeraldas, Ecuador</p>
+              <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" class="map-link">
+                  View on Google Maps
+              </a>
+          </div>
+      </div>
+
+      <div class="footer-bottom">
+          <p>&copy; <span id="CurrentYear"></span> Esmeraldas Chamber of Commerce</p>
+          <p>Juan Valencia Soto</p>
+          <p>Last Modified: <span id="lastModification"></span></p>
+      </div>
+  </footer>
+
+    <!-- JavaScript Files -->
+    <script src="scripts/navigation.js"></script>
+    <script src="scripts/directory.js"></script>
+    <script src="scripts/dates.js"></script>
+    <script src="scripts/visitor.js"></script>
+  </body>
+</html>
