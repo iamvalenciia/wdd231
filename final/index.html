@@ -1,191 +1,258 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Smart Supermarket - Compare prices across Ecuador's top supermarkets. Find the best deals on groceries, household items, and more. Save money with our price comparison tool.">
-    <meta name="author" content="Smart Supermarket Team">
-    <meta name="keywords" content="supermarket, price comparison, Ecuador, grocery, shopping, deals">
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Smart Supermarket - Compare prices across Ecuador's top supermarkets. Find the best deals on groceries, household items, and more. Save money with our price comparison tool."
+    />
+    <meta name="author" content="Smart Supermarket Team" />
+    <meta
+      name="keywords"
+      content="supermarket, price comparison, Ecuador, grocery, shopping, deals"
+    />
+
     <!-- Open Graph / Social Media Meta Tags -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Smart Supermarket - Ecuador Price Comparison">
-    <meta property="og:description" content="Compare prices across Ecuador's top supermarkets and save money on your shopping.">
-    <meta property="og:image" content="./images/og-image.jpg">
-    <meta property="og:url" content="https://yourusername.github.io/wdd231/final/">
-    
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Smart Supermarket - Ecuador Price Comparison"
+    />
+    <meta
+      property="og:description"
+      content="Compare prices across Ecuador's top supermarkets and save money on your shopping."
+    />
+    <meta property="og:image" content="./images/og-image.jpg" />
+    <meta
+      property="og:url"
+      content="https://yourusername.github.io/wdd231/final/"
+    />
+
     <!-- Twitter Card Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Smart Supermarket - Ecuador Price Comparison">
-    <meta name="twitter:description" content="Compare prices across Ecuador's top supermarkets and save money on your shopping.">
-    <meta name="twitter:image" content="./images/og-image.jpg">
-    
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Smart Supermarket - Ecuador Price Comparison"
+    />
+    <meta
+      name="twitter:description"
+      content="Compare prices across Ecuador's top supermarkets and save money on your shopping."
+    />
+    <meta name="twitter:image" content="./images/og-image.jpg" />
+
     <title>Smart Supermarket - Compare Prices in Ecuador</title>
-    
+
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
-    <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png">
-    
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./images/apple-touch-icon.png"
+    />
+
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
-    
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Poppins:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- Main CSS -->
-    <link rel="stylesheet" href="styles/main.css">
-    
+    <link rel="stylesheet" href="styles/main.css" />
+
     <!-- Structured Data -->
     <script type="application/ld+json">
-    {
+      {
         "@context": "https://schema.org",
         "@type": "WebSite",
         "name": "Smart Supermarket",
         "description": "Price comparison tool for supermarkets in Ecuador",
         "url": "https://yourusername.github.io/wdd231/final/",
         "potentialAction": {
-            "@type": "SearchAction",
-            "target": "https://yourusername.github.io/wdd231/final/?search={search_term_string}",
-            "query-input": "required name=search_term_string"
+          "@type": "SearchAction",
+          "target": "https://yourusername.github.io/wdd231/final/?search={search_term_string}",
+          "query-input": "required name=search_term_string"
         }
-    }
+      }
     </script>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div class="header-container">
-            <a href="index.html" class="logo">Smart Supermarket</a>
-            <nav>
-                <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
-                    ☰
-                </button>
-                <ul>
-                    <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="compare.html">Compare</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+      <div class="header-container">
+        <a href="index.html" class="logo">Smart Supermarket</a>
+        <nav>
+          <button
+            class="hamburger"
+            aria-label="Toggle navigation menu"
+            aria-expanded="false"
+          >
+            ☰
+          </button>
+          <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="compare.html">Compare</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main>
-        <!-- Hero Section -->
-        <section class="hero">
-            <h1>Smart Shopping Made Simple</h1>
-            <p>Compare prices across Ecuador's top supermarkets and find the best deals on your favorite products.</p>
-            <a href="#products" class="btn btn-primary">Start Comparing Prices</a>
-        </section>
+      <!-- Hero Section -->
+      <section class="hero">
+        <h1>Smart Shopping Made Simple</h1>
+        <p>
+          Compare prices across Ecuador's top supermarkets and find the best
+          deals on your favorite products.
+        </p>
+        <a href="#products" class="btn btn-primary">Start Comparing Prices</a>
+      </section>
 
-        <!-- Loading and Error Containers -->
-        <div id="loading-indicator" style="display: none;"></div>
-        <div id="error-container" style="display: none;"></div>
+      <!-- Loading and Error Containers -->
+      <div id="loading-indicator" style="display: none"></div>
+      <div id="error-container" style="display: none"></div>
 
-        <!-- Search and Filter Section -->
-        <section class="search-filters">
-            <h2>Find Your Products</h2>
-            <div class="search-container">
-                <label for="search-input" class="visually-hidden">Search for products, brands, or categories</label>
-                <input type="text" 
-                       id="search-input" 
-                       class="search-input" 
-                       placeholder="Search for products, brands, or categories..."
-                       aria-label="Search products">
-            </div>
-            <div class="filters">
-                <select id="category-filter" class="filter-select" aria-label="Filter by category">
-                    <option value="all">All Categories</option>
-                </select>
-                <select id="sort-select" class="filter-select" aria-label="Sort products">
-                    <option value="name">Sort by Name</option>
-                    <option value="price-low">Price: Low to High</option>
-                    <option value="price-high">Price: High to Low</option>
-                    <option value="savings">Best Savings</option>
-                    <option value="category">Category</option>
-                </select>
-                <button id="clear-filters" class="btn">Clear Filters</button>
-            </div>
-        </section>
+      <!-- Search and Filter Section -->
+      <section class="search-filters">
+        <h2>Find Your Products</h2>
+        <div class="search-container">
+          <label for="search-input" class="visually-hidden"
+            >Search for products, brands, or categories</label
+          >
+          <input
+            type="text"
+            id="search-input"
+            class="search-input"
+            placeholder="Search for products, brands, or categories..."
+            aria-label="Search products"
+          />
+        </div>
+        <div class="filters">
+          <select
+            id="category-filter"
+            class="filter-select"
+            aria-label="Filter by category"
+          >
+            <option value="all">All Categories</option>
+          </select>
+          <select
+            id="sort-select"
+            class="filter-select"
+            aria-label="Sort products"
+          >
+            <option value="name">Sort by Name</option>
+            <option value="price-low">Price: Low to High</option>
+            <option value="price-high">Price: High to Low</option>
+            <option value="savings">Best Savings</option>
+            <option value="category">Category</option>
+          </select>
+          <button id="clear-filters" class="btn">Clear Filters</button>
+        </div>
+      </section>
 
-        <!-- Products Section -->
-        <section id="products" class="products-container">
-            <div class="products-header">
-                <h2>Product Price Comparison</h2>
-                <p id="products-count">Loading products...</p>
-            </div>
-            <div id="products-grid" class="products-grid">
-                <!-- Products will be dynamically generated here -->
-            </div>
-        </section>
+      <!-- Products Section -->
+      <section id="products" class="products-container">
+        <div class="products-header">
+          <h2>Product Price Comparison</h2>
+          <p id="products-count">Loading products...</p>
+        </div>
+        <div id="products-grid" class="products-grid">
+          <!-- Products will be dynamically generated here -->
+        </div>
+      </section>
 
-        <!-- Features Section -->
-        <section class="features">
-            <h2>Why Choose Smart Supermarket?</h2>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <h3>💰 Save Money</h3>
-                    <p>Compare prices across multiple supermarkets to find the best deals and save on your grocery shopping.</p>
-                </div>
-                <div class="feature-card">
-                    <h3>⏱️ Save Time</h3>
-                    <p>No need to visit multiple stores. Compare prices instantly from the comfort of your home.</p>
-                </div>
-                <div class="feature-card">
-                    <h3>📊 Price Trends</h3>
-                    <p>Track price history and trends to know the best time to buy your favorite products.</p>
-                </div>
-                <div class="feature-card">
-                    <h3>🔍 Easy Search</h3>
-                    <p>Find products quickly with our smart search and filtering system.</p>
-                </div>
-            </div>
-        </section>
+      <!-- Features Section -->
+      <section class="features">
+        <h2>Why Choose Smart Supermarket?</h2>
+        <div class="features-grid">
+          <div class="feature-card">
+            <h3>💰 Save Money</h3>
+            <p>
+              Compare prices across multiple supermarkets to find the best deals
+              and save on your grocery shopping.
+            </p>
+          </div>
+          <div class="feature-card">
+            <h3>⏱️ Save Time</h3>
+            <p>
+              No need to visit multiple stores. Compare prices instantly from
+              the comfort of your home.
+            </p>
+          </div>
+          <div class="feature-card">
+            <h3>📊 Price Trends</h3>
+            <p>
+              Track price history and trends to know the best time to buy your
+              favorite products.
+            </p>
+          </div>
+          <div class="feature-card">
+            <h3>🔍 Easy Search</h3>
+            <p>
+              Find products quickly with our smart search and filtering system.
+            </p>
+          </div>
+        </div>
+      </section>
 
-        <!-- Quick Stats -->
-        <section class="stats">
-            <div class="stats-container">
-                <div class="stat-item">
-                    <span class="stat-number">18+</span>
-                    <span class="stat-label">Products</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number">3</span>
-                    <span class="stat-label">Supermarkets</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number">15+</span>
-                    <span class="stat-label">Categories</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number">Daily</span>
-                    <span class="stat-label">Updates</span>
-                </div>
-            </div>
-        </section>
+      <!-- Quick Stats -->
+      <section class="stats">
+        <div class="stats-container">
+          <div class="stat-item">
+            <span class="stat-number">18+</span>
+            <span class="stat-label">Products</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">3</span>
+            <span class="stat-label">Supermarkets</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">15+</span>
+            <span class="stat-label">Categories</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">Daily</span>
+            <span class="stat-label">Updates</span>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer>
-        <div class="footer-content">
-            <div class="footer-links">
-                <a href="index.html">Home</a>
-                <a href="compare.html">Compare</a>
-                <a href="contact.html">Contact</a>
-                <a href="site-plan.html">Site Plan</a>
-                <a href="attributions.html">Attributions</a>
-            </div>
-            <div class="footer-info">
-                <p>&copy; 2024 Smart Supermarket. All rights reserved.</p>
-                <p>Helping you make smart shopping decisions in Ecuador.</p>
-                <p><a href="#" id="video-link">📹 View Demo Video</a></p>
-            </div>
-            <div class="footer-social">
-                <p>Follow us for the latest deals and updates!</p>
-            </div>
+      <div class="footer-content">
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="compare.html">Compare</a>
+          <a href="contact.html">Contact</a>
+          <a href="site-plan.html">Site Plan</a>
+          <a href="attributions.html">Attributions</a>
         </div>
+        <div class="footer-info">
+          <p>&copy; 2024 Smart Supermarket. All rights reserved.</p>
+          <p>Helping you make smart shopping decisions in Ecuador.</p>
+          <p>
+            <a href="https://youtu.be/LH6VyjV6QQQ" id="video-link"
+              >📹 View Demo Video</a
+            >
+          </p>
+        </div>
+        <div class="footer-social">
+          <p>Follow us for the latest deals and updates!</p>
+        </div>
+      </div>
     </footer>
 
     <!-- Scroll to Top Button -->
-    <button id="scroll-to-top" class="scroll-to-top" aria-label="Scroll to top" style="display: none;">
-        ↑
+    <button
+      id="scroll-to-top"
+      class="scroll-to-top"
+      aria-label="Scroll to top"
+      style="display: none"
+    >
+      ↑
     </button>
 
     <!-- JavaScript Modules -->
     <script type="module" src="js/app.js"></script>
-</body>
+  </body>
 </html>
