@@ -1,0 +1,240 @@
+{
+  "supermarkets": [
+    {
+      "id": 1,
+      "name": "Supermaxi",
+      "location": "Ecuador",
+      "type": "Chain Store"
+    },
+    {
+      "id": 2,
+      "name": "Mi Comisariato",
+      "location": "Ecuador", 
+      "type": "Chain Store"
+    },
+    {
+      "id": 3,
+      "name": "Tía",
+      "location": "Ecuador",
+      "type": "Chain Store"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Arroz Extra 1kg",
+      "category": "Granos",
+      "brand": "Ecua Rice",
+      "image": "./images/products/arroz-extra.webp",
+      "prices": [
+        {"supermarket": "Supermaxi", "price": 2.45, "lastUpdated": "2024-06-01"},
+        {"supermarket": "Mi Comisariato", "price": 2.38, "lastUpdated": "2024-06-01"},
+        {"supermarket": "Tía", "price": 2.52, "lastUpdated": "2024-06-01"}
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Aceite Girasol 1L",
+      "category": "Aceites",
+      "brand": "La Favorita",
+      "image": "./images/products/aceite-girasol-1l.webp",
+      "prices": [
+        {"supermarket": "Supermaxi", "price": 3.75, "lastUpdated": "2024-06-01"},
+        {"supermarket": "Mi Comisariato", "price": 3.68, "lastUpdated": "2024-06-01"},
+        {"supermarket": "Tía", "price": 3.82, "lastUpdated": "2024-06-01"}
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Leche Entera 1L",
+      "category": "Lácteos",
+      "brand": "Vita Leche",
+      "image": "./images/products/leche-entera.webp",
+      "prices": [
+        {"supermarket": "Supermaxi", "price": 1.25, "lastUpdated": "2024-06-01"},
+        {"supermarket": "Mi Comisariato", "price": 1.22, "lastUpdated": "2024-06-01"},
+        {"supermarket": "Tía", "price": 1.28, "lastUpdated": "2024-06-01"}
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Pan Integral 500g",
+      "category": "Panadería",
+      "brand": "Bimbo",
+      "image": "./images/products/pan-integral.webp",
+      "prices": [
+        {"supermarket": "Supermaxi", "price": 1.85, "lastUpdated": "2024-06-01"},
+        {"supermarket": "Mi Comisariato", "price": 1.78, "lastUpdated": "2024-06-01"},
+        {"supermarket": "Tía", "price": 1.92, "lastUpdated": "2024-06-01"}
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Huevos AA x12",
+      "category": "Proteínas",
+      "brand": "Indaves",
+      "image": "./images/products/huevos-aa.webp",
+      "prices": [
+        {"supermarket": "Supermaxi", "price": 2.95, "lastUpdated": "2024-06-01"},
+        {"supermarket": "Mi Comisariato", "price": 2.88, "lastUpdated": "2024-06-01"},
+        {"supermarket": "Tía", "price": 3.05, "lastUpdated": "2024-06-01"}
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Pollo Entero 1kg",
+      "category": "Carnes",
+      "brand": "Pronaca",
+      "image": "./images/products/pollo-1kg.webp",
+      "prices": [
+        {"supermarket": "Supermaxi", "price": 4.25, "lastUpdated": "2024-06-01"},
+        {"supermarket": "Mi Comisariato", "price": 4.18, "lastUpdated": "2024-06-01"},
+        {"supermarket": "Tía", "price": 4.35, "lastUpdated": "2024-06-01"}
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Azúcar Blanca 1kg",
+      "category": "Endulzantes",
+      "brand": "Valdez",
+      "image": "./images/products/azucar-blanca.webp",
+      "prices": [
+        {"supermarket": "Supermaxi", "price": 1.45, "lastUpdated": "2024-06-01"},
+        {"supermarket": "Mi Comisariato", "price": 1.42, "lastUpdated": "2024-06-01"},
+        {"supermarket": "Tía", "price": 1.48, "lastUpdated": "2024-06-01"}
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Fideos Spaghetti 500g",
+      "category": "Pastas",
+      "brand": "Don Vittorio",
+      "image": "./images/products/fideos.webp",
+      "prices": [
+        {"supermarket": "Supermaxi", "price": 1.65, "lastUpdated": "2024-06-01"},
+        {"supermarket": "Mi Comisariato", "price": 1.58, "lastUpdated": "2024-06-01"},
+        {"supermarket": "Tía", "price": 1.72, "lastUpdated": "2024-06-01"}
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Atún en Lata 160g",
+      "category": "Conservas",
+      "brand": "Real",
+      "image": "./images/products/atun-lata.webp",
+      "prices": [
+        {"supermarket": "Supermaxi", "price": 1.95, "lastUpdated": "2024-06-01"},
+        {"supermarket": "Mi Comisariato", "price": 1.88, "lastUpdated": "2024-06-01"},
+        {"supermarket": "Tía", "price": 2.02, "lastUpdated": "2024-06-01"}
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Yogurt Natural 1L",
+      "category": "Lácteos",
+      "brand": "Alpina",
+      "image": "./images/products/yogurt-1l.webp",
+      "prices": [
+        {"supermarket": "Supermaxi", "price": 2.75, "lastUpdated": "2024-06-01"},
+        {"supermarket": "Mi Comisariato", "price": 2.68, "lastUpdated": "2024-06-01"},
+        {"supermarket": "Tía", "price": 2.85, "lastUpdated": "2024-06-01"}
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Plátano Verde 1kg",
+      "category": "Frutas",
+      "brand": "Fresco",
+      "image": "./images/products/verde.webp",
+      "prices": [
+        {"supermarket": "Supermaxi", "price": 0.85, "lastUpdated": "2024-06-01"},
+        {"supermarket": "Mi Comisariato", "price": 0.82, "lastUpdated": "2024-06-01"},
+        {"supermarket": "Tía", "price": 0.88, "lastUpdated": "2024-06-01"}
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Cebolla Colorada 1kg",
+      "category": "Verduras",
+      "brand": "Fresco",
+      "image": "./images/products/cebolla.webp",
+      "prices": [
+        {"supermarket": "Supermaxi", "price": 1.25, "lastUpdated": "2024-06-01"},
+        {"supermarket": "Mi Comisariato", "price": 1.18, "lastUpdated": "2024-06-01"},
+        {"supermarket": "Tía", "price": 1.32, "lastUpdated": "2024-06-01"}
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Tomate Riñón 1kg",
+      "category": "Verduras",
+      "brand": "Fresco",
+      "image": "./images/products/tomate-rinon.webp",
+      "prices": [
+        {"supermarket": "Supermaxi", "price": 1.45, "lastUpdated": "2024-06-01"},
+        {"supermarket": "Mi Comisariato", "price": 1.38, "lastUpdated": "2024-06-01"},
+        {"supermarket": "Tía", "price": 1.52, "lastUpdated": "2024-06-01"}
+      ]
+    },
+    {
+      "id": 14,
+      "name": "Detergente Líquido 1L",
+      "category": "Limpieza",
+      "brand": "Deja",
+      "image": "./images/products/detergente.webp",
+      "prices": [
+        {"supermarket": "Supermaxi", "price": 3.25, "lastUpdated": "2024-06-01"},
+        {"supermarket": "Mi Comisariato", "price": 3.18, "lastUpdated": "2024-06-01"},
+        {"supermarket": "Tía", "price": 3.35, "lastUpdated": "2024-06-01"}
+      ]
+    },
+    {
+      "id": 15,
+      "name": "Papel Higiénico x4",
+      "category": "Higiene",
+      "brand": "Scott",
+      "image": "./images/products/papel-higienico.webp",
+      "prices": [
+        {"supermarket": "Supermaxi", "price": 4.85, "lastUpdated": "2024-06-01"},
+        {"supermarket": "Mi Comisariato", "price": 4.78, "lastUpdated": "2024-06-01"},
+        {"supermarket": "Tía", "price": 4.95, "lastUpdated": "2024-06-01"}
+      ]
+    },
+    {
+      "id": 16,
+      "name": "Café Molido 500g",
+      "category": "Bebidas",
+      "brand": "Juan Valdez",
+      "image": "./images/products/cafe-500g.webp",
+      "prices": [
+        {"supermarket": "Supermaxi", "price": 6.25, "lastUpdated": "2024-06-01"},
+        {"supermarket": "Mi Comisariato", "price": 6.18, "lastUpdated": "2024-06-01"},
+        {"supermarket": "Tía", "price": 6.35, "lastUpdated": "2024-06-01"}
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Queso Fresco 500g",
+      "category": "Lácteos",
+      "brand": "Salinerito",
+      "image": "./images/products/queso-500g.webp",
+      "prices": [
+        {"supermarket": "Supermaxi", "price": 3.85, "lastUpdated": "2024-06-01"},
+        {"supermarket": "Mi Comisariato", "price": 3.78, "lastUpdated": "2024-06-01"},
+        {"supermarket": "Tía", "price": 3.95, "lastUpdated": "2024-06-01"}
+      ]
+    },
+    {
+      "id": 18,
+      "name": "Sal de Mesa 1kg",
+      "category": "Condimentos",
+      "brand": "Crissal",
+      "image": "./images/products/sal-1kg.webp",
+      "prices": [
+        {"supermarket": "Supermaxi", "price": 0.65, "lastUpdated": "2024-06-01"},
+        {"supermarket": "Mi Comisariato", "price": 0.62, "lastUpdated": "2024-06-01"},
+        {"supermarket": "Tía", "price": 0.68, "lastUpdated": "2024-06-01"}
+      ]
+    }
+  ]
+} 

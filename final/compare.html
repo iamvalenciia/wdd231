@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Compare selected products side-by-side across different supermarkets in Ecuador. Make informed shopping decisions with detailed price comparisons.">
+    <meta name="author" content="Smart Supermarket Team">
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Product Comparison - Smart Supermarket">
+    <meta property="og:description" content="Compare products side-by-side across Ecuador's supermarkets.">
+    <meta property="og:image" content="./images/og-image.jpg">
+    
+    <title>Product Comparison - Smart Supermarket</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo">Smart Supermarket</a>
+            <nav>
+                <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+                    ☰
+                </button>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="compare.html" class="active">Compare</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <h1>Product Comparison</h1>
+            <p>Compare your selected products side-by-side to find the best deals</p>
+        </section>
+
+        <!-- Loading and Error Containers -->
+        <div id="loading-indicator" style="display: none;"></div>
+        <div id="error-container" style="display: none;"></div>
+
+        <!-- Comparison Controls -->
+        <section class="comparison-controls">
+            <h2>Manage Your Comparison List</h2>
+            <div class="controls-actions">
+                <button id="clear-comparison" class="btn btn-secondary">Clear All</button>
+                <button id="add-products" class="btn btn-primary">Add More Products</button>
+                <div class="comparison-count">
+                    <span id="comparison-items-count">0</span> items selected
+                </div>
+            </div>
+        </section>
+
+        <!-- Comparison Table -->
+        <section class="comparison-container">
+            <div id="comparison-table-container">
+                <!-- Comparison table will be generated here -->
+                <div class="empty-comparison">
+                    <h3>No products selected for comparison</h3>
+                    <p>Go to the <a href="index.html">home page</a> to add products to your comparison list.</p>
+                    <div class="comparison-instructions">
+                        <h4>How to compare products:</h4>
+                        <ol>
+                            <li>Browse products on the home page</li>
+                            <li>Click "View Details" on any product</li>
+                            <li>Click "Add to Comparison" in the product modal</li>
+                            <li>Return to this page to see the comparison</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Comparison Insights -->
+        <section id="comparison-insights" class="comparison-insights" style="display: none;">
+            <h2>Shopping Insights</h2>
+            <div class="insights-grid">
+                <div class="insight-card">
+                    <h3>💰 Best Overall Store</h3>
+                    <p id="best-store">Calculating...</p>
+                </div>
+                <div class="insight-card">
+                    <h3>💡 Total Savings</h3>
+                    <p id="total-savings">$0.00</p>
+                </div>
+                <div class="insight-card">
+                    <h3>🛒 Shopping Strategy</h3>
+                    <p id="shopping-strategy">Add products to see recommendations</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Recommendations -->
+        <section class="recommendations">
+            <h2>Similar Products You Might Like</h2>
+            <div id="recommendations-grid" class="products-grid">
+                <!-- Recommendations will be loaded here -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="compare.html">Compare</a>
+                <a href="contact.html">Contact</a>
+                <a href="site-plan.html">Site Plan</a>
+                <a href="attributions.html">Attributions</a>
+            </div>
+            <div class="footer-info">
+                <p>&copy; 2024 Smart Supermarket. All rights reserved.</p>
+                <p>Helping you make smart shopping decisions in Ecuador.</p>
+                <p><a href="#" id="video-link">📹 View Demo Video</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scroll-to-top" class="scroll-to-top" aria-label="Scroll to top" style="display: none;">
+        ↑
+    </button>
+
+    <!-- JavaScript Modules -->
+    <script type="module" src="js/compare.js"></script>
+</body>
+</html> 

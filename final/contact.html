@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Smart Supermarket. Send us your feedback, suggestions, or report issues. We're here to help you save money on your shopping.">
+    <meta name="author" content="Smart Supermarket Team">
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Contact Us - Smart Supermarket">
+    <meta property="og:description" content="Get in touch with Smart Supermarket team for support and feedback.">
+    <meta property="og:image" content="./images/og-image.jpg">
+    
+    <title>Contact Us - Smart Supermarket</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo">Smart Supermarket</a>
+            <nav>
+                <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+                    ☰
+                </button>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="compare.html">Compare</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <h1>Contact Us</h1>
+            <p>We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
+        </section>
+
+        <div class="contact-content">
+            <!-- Contact Form -->
+            <section class="form-container">
+                <h2>Send us a Message</h2>
+                <form id="contact-form" action="form-action.html" method="GET">
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" 
+                               id="name" 
+                               name="name" 
+                               class="form-input" 
+                               required 
+                               minlength="2"
+                               maxlength="50"
+                               placeholder="Enter your full name">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" 
+                               id="email" 
+                               name="email" 
+                               class="form-input" 
+                               required
+                               placeholder="Enter your email address">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" 
+                               id="phone" 
+                               name="phone" 
+                               class="form-input"
+                               pattern="[0-9]{10}"
+                               placeholder="Enter your phone number (optional)">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Subject *</label>
+                        <select id="subject" name="subject" class="form-input" required>
+                            <option value="">Select a subject</option>
+                            <option value="general">General Inquiry</option>
+                            <option value="suggestion">Product Suggestion</option>
+                            <option value="bug-report">Bug Report</option>
+                            <option value="price-update">Price Update Request</option>
+                            <option value="business">Business Partnership</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" 
+                                  name="message" 
+                                  class="form-input" 
+                                  required 
+                                  minlength="10"
+                                  maxlength="500"
+                                  rows="6"
+                                  placeholder="Please provide details about your inquiry..."></textarea>
+                        <div class="character-count">
+                            <span id="char-count">0</span>/500 characters
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="newsletter" class="checkbox-label">
+                            <input type="checkbox" 
+                                   id="newsletter" 
+                                   name="newsletter" 
+                                   value="yes">
+                            <span class="checkmark"></span>
+                            Subscribe to our newsletter for the latest deals and updates
+                        </label>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="privacy" class="checkbox-label">
+                            <input type="checkbox" 
+                                   id="privacy" 
+                                   name="privacy" 
+                                   value="accepted" 
+                                   required>
+                            <span class="checkmark"></span>
+                            I agree to the <a href="#" target="_blank">Privacy Policy</a> and <a href="#" target="_blank">Terms of Service</a> *
+                        </label>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </section>
+
+            <!-- Contact Information -->
+            <section class="contact-info">
+                <h2>Get in Touch</h2>
+                
+                <div class="contact-card">
+                    <h3>📧 Email</h3>
+                    <p>info@smartsupermarket.ec</p>
+                    <p>support@smartsupermarket.ec</p>
+                </div>
+                
+                <div class="contact-card">
+                    <h3>📱 Phone</h3>
+                    <p>+593-2-XXX-XXXX</p>
+                    <p>Monday - Friday: 8:00 AM - 6:00 PM</p>
+                </div>
+                
+                <div class="contact-card">
+                    <h3>📍 Address</h3>
+                    <p>Quito, Ecuador</p>
+                    <p>Serving all of Ecuador</p>
+                </div>
+                
+                <div class="contact-card">
+                    <h3>⏰ Response Time</h3>
+                    <p>We typically respond within 24 hours</p>
+                    <p>Urgent issues: Within 4 hours</p>
+                </div>
+            </section>
+        </div>
+
+        <!-- FAQ Section -->
+        <section class="faq">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>How often are prices updated?</h3>
+                    <p>We update our price database daily to ensure you have the most current information.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Can I suggest new products to add?</h3>
+                    <p>Absolutely! Use the contact form above with "Product Suggestion" as the subject.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Is this service free?</h3>
+                    <p>Yes, Smart Supermarket is completely free to use for all consumers.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>How do you collect price data?</h3>
+                    <p>We partner with supermarkets and use automated systems to gather accurate pricing information.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="compare.html">Compare</a>
+                <a href="contact.html">Contact</a>
+                <a href="site-plan.html">Site Plan</a>
+                <a href="attributions.html">Attributions</a>
+            </div>
+            <div class="footer-info">
+                <p>&copy; 2024 Smart Supermarket. All rights reserved.</p>
+                <p>Helping you make smart shopping decisions in Ecuador.</p>
+                <p><a href="#" id="video-link">📹 View Demo Video</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scroll-to-top" class="scroll-to-top" aria-label="Scroll to top" style="display: none;">
+        ↑
+    </button>
+
+    <!-- JavaScript Modules -->
+    <script type="module" src="js/contact.js"></script>
+</body>
+</html> 
